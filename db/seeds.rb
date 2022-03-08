@@ -5,3 +5,25 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+Product.create([
+    {
+        name: "Jimi Hendrix Monterey Strat",
+        description: "Lemme stand next to your fire.",
+        price: 999.99
+    },
+    {
+        name: "George Harrison Rosewood Tele",
+        description: "*gently weeps*",
+        price: 999.99
+    },
+    {
+        name: "B.B. King Lucille",
+        description: "Lucille don't wanna play nothing but the blues.",
+        price: 999.99
+    },
+    {
+        name: "Prince The Purple One",
+        description: "The guitar formerly known as...",
+        price: 999.99
+    }
+])
