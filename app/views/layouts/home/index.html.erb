@@ -1,0 +1,15 @@
+<h1 class="display-1">Watch out world! coming soon!</h1>
+
+There are <%= @products.count %> products!!
+
+<ul>
+<% @products.each do |product| %>
+    <li><%=product.name%>: <%= product.price %></li>
+    <%= link_to "Buy Now", buy_path(product), class: "btn btn-primary"%>
+<% end %>
+</ul>
+
+<hr/>
+
+<h2> Your shopping cart has <%=@cart.length%> items</h2>
+<%= link_to "Check Out", checkout_path%>
