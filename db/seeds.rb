@@ -13,23 +13,27 @@ Product.create([
         description: "Lemme stand next to your fire.",
         price: 999.99,
         quantity: 10,
+        image: jimi.png
     },
     {
         name: "George Harrison Rosewood Tele",
         description: "*gently weeps*",
         price: 999.99,
         quantity: 10,
+        image: rosie.png
     },
     {
         name: "B.B. King Lucille",
         description: "Lucille don't wanna play nothing but the blues.",
         price: 999.99,
         quantity: 10,
+        image: bb.jpg
     },
     {
         name: "Prince The Purple One",
         description: "The guitar formerly known as...",
         price: 999.99,
         quantity: 10,
+        image: prince.jpg
     }
 ])
