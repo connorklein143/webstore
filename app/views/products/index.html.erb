@@ -3,7 +3,7 @@
 
 <ul>
   <% @products.each do |product| %>
-    <li> <%=product.name%>: $<%=product.price%> There are <%=@product.quantity%> in stock!
+    <li> <%=product.name%>: $<%=product.price%> There are <%=product.quantity%> in stock!
     <%= link_to "Buy Now", buy_path(product), class: "btn btn-primary" %>
     </li>
   <% end %>

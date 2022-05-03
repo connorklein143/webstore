@@ -20,6 +20,11 @@ class ProductsController < ApplicationController
     def checkout
         @cart = session[:cart]
         session[:cart] = []
+        @cart.each do |item|
+            p = Product.find(item["id"])
+            p.quantity = p.quantity - 1
+            p.save
+        end
     end
 
 end
